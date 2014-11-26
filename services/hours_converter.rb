@@ -61,7 +61,7 @@ class HoursConverter
   end
 
   def tasks_csv
-    CSV.parse(file, headers: true)
+    CSV.parse file, headers: true
   end
 
   def convert_time(time_string)
