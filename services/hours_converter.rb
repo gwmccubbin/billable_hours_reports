@@ -1,5 +1,11 @@
 class HoursConverter
-  EXTRANEOUS_DATA = ['Session Time', 'Session Start Date', 'Session End Date', 'Session Notes']
+  EXTRANEOUS_DATA = [
+                     'Session Time', 
+                     'Session Start Date', 
+                     'Session End Date', 
+                     'Session Notes'
+                    ]
+
   attr_reader :file, :new_csv
 
   class << self
