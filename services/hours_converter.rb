@@ -52,8 +52,7 @@ class HoursConverter
 
   def formatted_tasks
     formatted_tasks = unique_tasks.map { |t| t.reject { |k,v| EXTRANEOUS_DATA.include? k } }
-    formatted_tasks.map { |t| t['Task Time'] = convert_time(t['Task Time']) }
-    formatted_tasks
+    formatted_tasks.each { |t| t['Task Time'] = convert_time(t['Task Time']) }
   end
 
   def unique_tasks
